@@ -35,8 +35,8 @@ function LoginPage() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-md w-full space-y-8 bg-white p-6 rounded-lg shadow-lg">
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8  bg-opacity-80" style={{ backgroundImage: `url('https://masencarnacion.s3.us-west-2.amazonaws.com/uploads/public/641/c8a/624/641c8a62463ad110324282.webp')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="max-w-md w-full space-y-8 bg-white p-6 rounded-lg shadow-lg bg-opacity-80">
                 <div>
                     <h2 className="text-center text-3xl font-extrabold text-gray-900">{isRegistering ? 'Registro' : 'Iniciar sesión'}</h2>
                 </div>
