@@ -24,15 +24,15 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Hoteles', description: 'Encuentra los mejores hoteles para ti', href: '#', icon: ChartPieIcon },
+  { name: 'Restaurantes', description: 'La mejor comida en los mejores lugares', href: '#', icon: CursorArrowRaysIcon },
+  { name: 'Playas', description: 'Entretenimiento y el Calor del verano', href: '#', icon: FingerPrintIcon },
+  { name: 'Plazas', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
+  { name: 'Monumentos', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'Conoce Nuestra ciudad', href: '#', icon: PlayCircleIcon },
+  { name: 'Contactanos', href: '#', icon: PhoneIcon },
 ]
 
 export default function Header() {
@@ -43,7 +43,7 @@ export default function Header() {
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">TURISMO PPY</span>
             <img alt="" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" className="h-8 w-auto" />
           </a>
         </div>
@@ -60,7 +60,7 @@ export default function Header() {
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
+              Categorias
               <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
             </PopoverButton>
 
@@ -103,18 +103,15 @@ export default function Header() {
           </Popover>
 
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Features
+            Lugares
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Marketplace
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Company
+            Itinerario
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
+            Log Out <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </nav>
@@ -123,7 +120,7 @@ export default function Header() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">TURISMO PPY</span>
               <img
                 alt=""
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
