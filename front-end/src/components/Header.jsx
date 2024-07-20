@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import {
   Dialog,
   DialogPanel,
@@ -36,7 +37,17 @@ const callsToAction = [
 ]
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navigate = useNavigate(); // Usa useNavigate aquí
+
+  const handleOutLogin = () => {
+    // Elimina el token de autenticación (ajusta esto según tu implementación)
+    localStorage.removeItem('token'); // O sessionStorage, según cómo almacenes el token
+    
+    // Redirige al usuario a la página de inicio
+    navigate('/'); // Redirige a la página de inicio
+  };
 
   return (
     <header className="bg-white">
@@ -110,7 +121,7 @@ export default function Header() {
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900" onClick={handleOutLogin}>
             Log Out <span aria-hidden="true">&rarr;</span>
           </a>
         </div>

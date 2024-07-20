@@ -54,19 +54,19 @@ export default function Carrusel() {
       )}
     >
       <img
-        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
-        alt="image 1"
-        className="h-full w-full object-cover"
+          src="https://b01aa32c.rocketcdn.me/wp-content/uploads/2022/12/SanRoqueEncarnacion.jpg"
+          alt="image 1"
+          className="h-full w-full object-cover rounded-xl"
       />
       <img
-        src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-        alt="image 2"
-        className="h-full w-full object-cover"
+          src="https://masencarnacion.s3.us-west-2.amazonaws.com/uploads/public/635/80f/41a/63580f41a51ad859699708.png"
+          alt="image 2"
+          className="h-full w-full object-cover rounded-xl"
       />
       <img
-        src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-        alt="image 3"
-        className="h-full w-full object-cover"
+          src="https://grupovierci.brightspotcdn.com/dims4/default/1f5405e/2147483647/strip/true/crop/720x405+0+37/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fe9%2F39%2Fe96ecb6f4eceadf6234ac56f6785%2Fencarnacion-whatsapp-image-2024-01-01-at-11-24-37-49052298.jpeg"
+          alt="image 3"
+          className="h-full w-full object-cover rounded-xl"
       />
     </Carousel>
   );

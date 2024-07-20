@@ -1,6 +1,7 @@
 import Header from '../../components/Header';
 import Carrusel from '../../components/Carrusel';
 import Categorias from '../categoria/Categoria';
+import PlacesList from '../lugar/PlacesList';
 
 function Home() {
     return(
@@ -8,6 +9,7 @@ function Home() {
             <Header/>
             <Carrusel/>
             <Categorias/>
+            <PlacesList/>
         </div>
     );
 }
