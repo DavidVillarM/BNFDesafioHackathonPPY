@@ -1,16 +1,24 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const handleLogin = async (event) => {
         event.preventDefault();
         try {
             const response = await axios.post('http://localhost:3000/api/user/login', { email, password });
             alert(response.data.message);
+            if (response.data.token) {
+                
+                localStorage.setItem('token', response.data.token);
+                // para dirigir la pagina 
+                navigate('/home');
+            }
         } catch (error) {
             console.error('Error al iniciar sesión', error);
             alert(error.response.data.message);
