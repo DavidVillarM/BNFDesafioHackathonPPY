@@ -1,4 +1,5 @@
-'use client'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
@@ -12,7 +13,7 @@ import {
   PopoverButton,
   PopoverGroup,
   PopoverPanel,
-} from '@headlessui/react'
+} from '@headlessui/react';
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -21,8 +22,8 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+} from '@heroicons/react/24/outline';
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 
 const products = [
   { name: 'Hoteles', description: 'Encuentra los mejores hoteles para ti', href: '#', icon: ChartPieIcon },
@@ -30,11 +31,12 @@ const products = [
   { name: 'Playas', description: 'Entretenimiento y el Calor del verano', href: '#', icon: FingerPrintIcon },
   { name: 'Plazas', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
   { name: 'Monumentos', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
+];
+
 const callsToAction = [
   { name: 'Conoce Nuestra ciudad', href: '#', icon: PlayCircleIcon },
   { name: 'Contactanos', href: '#', icon: PhoneIcon },
-]
+];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -122,6 +124,7 @@ export default function Header() {
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900" onClick={handleOutLogin}>
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900" onClick={handleOutLogin}>
             Log Out <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -200,5 +203,5 @@ export default function Header() {
         </DialogPanel>
       </Dialog>
     </header>
-  )
+  );
 }

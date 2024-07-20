@@ -71,3 +71,5 @@ export default function Carrusel() {
     </Carousel>
   );
 }
+
+export default Carrusel;
